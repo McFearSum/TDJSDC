@@ -8,5 +8,8 @@ describe('String trim test', function() {
 		it('should remove leading white-space', function() {
 			expect("    a string".trim()).toEqual("a string");
 		});
+		it('should remove trailing white-space', function() {
+			expect("a string    ".trim()).toEqual("a string");
+		});
 	});
 });
